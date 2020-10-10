@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index-section{
+    padding: 50px 0px;
+}
+header{
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px -4px rgba(145,140,145,1);
+}
+.header-row{
+    height: 100px;
+}
+.header-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.header-menu{
+    height: 100%;
+}
+.header-menu-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: inherit;
+}
+.header-menu__item{
+    margin: 0px 10px;
+}
+.header-menu__item a:hover{
+    border-bottom: 1px solid #003176;
+}
+.header-menu__item a{
+    font-size: 18px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+    color: #003176;
+    text-decoration: none;
+}
+.current-page{
+    border-bottom: 1px solid #003176;
+}
+.header-logo__item{
+    max-width: 140px;
+    padding: 15px 0px;
+    height: inherit;
+}
+.header-logo__item img{
+    height: inherit;
+    object-fit: fill;
+    max-height: 80px;
+}
+
+
+.hero{
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+.hero-background, .hero-overlay{
+    width: 100%;
+    height: 100%;
+}
+.hero-overlay h1{
+    text-shadow: 0px 0px 10px black;
+    color: #fff;
+    padding: 5px;
+    font-size: 58px;
+    border-radius: 8px;
+    backdrop-filter: blur(1px);
+}
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+.hero-background:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(to bottom, rgba(148,148,148,0) 0%, rgba(2,2,2,0.3) 80%, rgba(0,0,0,0.21) 81%, rgba(0,0,0,0.74) 100%);
+    height: 100%;
+    width: 100%;
+}
+.hero-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-title{
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+}
+.section-title h2{
+    text-align: center;
+    color: #003176;
+    font-size: 32px;
+}
+
+
+
+.latest-work-row{
+    height: 500px;
+    padding-bottom: 30px;
+}
+
+.latest-work-item,
+.latest-work-double-item{
+    height: 100%;
+    position: relative;
+
+}
+.latest-work-item:hover .latest-work-item-overlay{
+    opacity: 1;
+    box-shadow: 0px 0px 5px 0px rgb(108, 108, 108);
+}
+.latest-work-item:hover{
+    cursor: pointer;
+}
+.latest-work-item.small-work:first-child{
+    padding-bottom: 8px;
+}
+.latest-work-item.small-work:last-child{
+    padding-top: 8px;
+}
+.latest-work-item.small-work{
+    height: 50%;
+}
+
+.latest-work-item-background{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.latest-work-item-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0px;
+    transition: opacity 0.3s;
+    left: 15px;
+    opacity: 0;
+    background-color: rgba(255,255,255, 0.8);
+    width: calc(100% - 30px);
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+.latest-work-item.small-work .latest-work-item-overlay{
+    left: 0;
+    width: 100%;
+}
+.latest-work-item.small-work:first-child .latest-work-item-overlay{
+    height: calc(100% - 8px);
+}
+.latest-work-item.small-work:last-child .latest-work-item-overlay{
+    height: calc(100% - 8px);
+    top: 8px;
+}
+.latest-work-item-overlay h3{
+    text-align: center;
+    font-size: 28px;
+    color: #003176;
+}
+.latest-work-item-overlay p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #003176;
+}
+.latest-work-item-background img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-me{
+    background-color: #f5f5f5;
+}
+.slider-item{
+    height: 200px;
+    padding: 20px;
+}
+.slider-item p{
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+#about-slider{
+    position: relative;
+    border: 1px solid #003176;
+
+}
+.arrow-slider{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    height: 100%;
+    padding: 0px 20px;
+}
+.arrow-slider:hover{
+    cursor: pointer;
+}
+.arrow-slider.arrow-slider-left{
+    left: 0;
+}
+.arrow-slider.arrow-slider-right{
+    right: 0;
+}
+.slider-item-container{
+    height: 100%;
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+.contact-container{
+    border: 1px solid #003176;
+    padding: 20px;
+}
+.contact-row{
+    min-height: 290px;
+}
+#contact-map-location{
+    height: 100%;
+}
+.contact-info-details ul{
+    padding-left: 20px;
+}
+.contact-info-details ul li{
+    list-style: none;
+
+}
+.contact-info-details ul li a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid #003176;
+}
+.contact-info-details ul li a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    color: #003176;
+}
+.contact-info-row{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact-info-socials ul{
+    padding-left: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contact-info-socials{
+    display: flex;
+    align-items: center;
+}
+.contact-info-socials ul li{
+    margin: 0px 10px;
+    list-style: none;
+}
+.contact-info-socials img{
+    width: 32px;
+    height: 32px;
+}
+
+footer{
+    background-color: #f5f5f5;
+}
+.footer-item ul{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-item ul li{
+    list-style: none;
+    display: inline-block;
+}
+.footer-item ul li a{
+    padding-bottom: 2px;
+    color: #003176;
+    border-bottom: 1px solid transparent;
+}
+.footer-item ul li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #003176;
+}
+.copyright p{
+    margin-bottom: 0px;
+}
+.copyright{
+    border-top: 1px solid #b9b9b9;
+    padding: 20px 0px;
+    text-align: center;
+}
