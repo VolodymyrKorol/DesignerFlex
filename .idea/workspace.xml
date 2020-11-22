@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,7 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="315538cb-f807-4b2a-8f94-eede73d2159b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,12 +57,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libphp/config" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\windowsApps\OServer\OpenServer\domains\DesignerFlex\libphp\config" />
+      <recent name="D:\windowsApps\OServer\OpenServer\domains\DesignerFlex\libphp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ONPU\3 курс\1сем\Людино-машинна-взаємодія\DesignerFlex\img" />
       <recent name="D:\workspace\designerflex\img" />
@@ -72,7 +82,12 @@
       <option name="presentableId" value="Default" />
       <updated>1602343040671</updated>
       <workItem from="1602343041868" duration="15292000" />
-      <workItem from="1602360068432" duration="1259000" />
+      <workItem from="1602360068432" duration="2226000" />
+      <workItem from="1602528604070" duration="6314000" />
+      <workItem from="1603994272448" duration="10589000" />
+      <workItem from="1605445758411" duration="3277000" />
+      <workItem from="1605449141016" duration="6077000" />
+      <workItem from="1606061141988" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="Changed background hero">
       <created>1602362019994</created>
@@ -88,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602362138681</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed images names">
+      <created>1602362233725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602362233725</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,21 +126,47 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Changed background hero" />
     <MESSAGE value="Changed images hero" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed images hero" />
+    <MESSAGE value="Changed images names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed images names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="624" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602350156468">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="624" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602350156468" />
+    <state x="696" y="223" key="FileChooserDialogImpl" timestamp="1605459994884">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="696" y="223" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605459994883" />
+    <state x="622" y="201" key="NewPhpClassDialog" timestamp="1606069968506">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="622" y="201" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606069968506" />
+    <state x="763" y="443" key="NewPhpFileDialog" timestamp="1606071643561">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="763" y="443" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606071643561" />
+    <state x="502" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606072038300">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="502" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606072038300" />
+    <state x="602" y="191" width="716" height="668" key="find.popup" timestamp="1606064899332">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="602" y="191" width="716" height="668" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606064899332" />
     <state x="532" y="239" key="run.anything.popup" timestamp="1602355772524">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="532" y="239" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602355772524" />
+    <state x="554" y="15" width="840" height="1034" key="search.everywhere.popup" timestamp="1606063311651">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="554" y="15" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606063311651" />
   </component>
 </project>

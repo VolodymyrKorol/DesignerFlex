@@ -26,6 +26,11 @@
                         </a>
                     </div>
                 </div>
+                <div class="header-burger-wrap col-6">
+                    <div class="burger-menu">
+                        <span></span>
+                    </div>
+                </div>
                 <div class="header-menu col-6">
                     <nav class="header-menu-container">
                         <div class="header-menu__item">
@@ -39,6 +44,19 @@
                         </div>
                         <div class="header-menu__item">
                             <a href="/">Contacts</a>
+                        </div>
+                        <div class="header-menu__item login-link">
+                            <?php if(empty($_SESSION['user'])):?>
+                            <a href="/login">Login</a>
+                            <?php else:?>
+                                <div class="user-account">
+                                    <h2>Hello,<?php echo $_SESSION['user']->fio ?></h2>
+                                    <a href="/logout">Log out</a>
+                                    <?php if ( $_SESSION['user']->roots): ?>
+                                        <a href="/admin">Admin panel</a>
+                                    <?php endif;?>
+                                </div>
+                            <?php endif;?>
                         </div>
                     </nav>
                 </div>
@@ -74,72 +92,70 @@
             <h2>Latest works</h2>
         </div>
         <div class="latest-work-row row">
-            <div class="latest-work-item medium-work col-4">
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-2.jpg')"></div>
                 <div class="latest-work-item-overlay">
                     <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt ipsam laudantium.</p>
-                </div>
-                <div class="latest-work-item-background "><img src="img/design-flex-2.jpg" alt=""></div>
-            </div>
-            <div class="latest-work-double-item  col-4">
-                <div class="latest-work-item small-work ">
-                    <div class="latest-work-item-overlay">
-                        <h3>Title</h3>
-                    </div>
-                    <div class="latest-work-item-background "><img src="img/design-flex-4.jpg" alt=""></div>
-                </div>
-                <div class="latest-work-item small-work ">
-                    <div class="latest-work-item-overlay">
-                        <h3>Title</h3>
-                    </div>
-                    <div class="latest-work-item-background "><img src="img/design-flex-2.jpg" alt=""></div>
+                    <a href="/">Show details</a>
                 </div>
             </div>
-            <div class="latest-work-item medium-work col-4">
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-3.jpg')"></div>
                 <div class="latest-work-item-overlay">
                     <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt ipsam laudantium.</p>
+                    <a href="/">Show details</a>
                 </div>
-                <div class="latest-work-item-background "><img src="img/design-flex-3.jpg" alt=""></div>
             </div>
-        </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-2.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-3.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-1.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-1.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-2.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-4.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
+            <div class="latest-work-item">
+                <div class="latest-work-item-background " style="background-image: url('img/design-flex-2.jpg')"></div>
+                <div class="latest-work-item-overlay">
+                    <h3>Title</h3>
+                    <a href="/">Show details</a>
+                </div>
+            </div>
 
-        <div class="latest-work-row row">
-            <div class="latest-work-double-item  col-4">
-                <div class="latest-work-item small-work">
-                    <div class="latest-work-item-overlay">
-                        <h3>Title</h3>
-                    </div>
-                    <div class="latest-work-item-background "><img src="img/design-flex-4.jpg" alt=""></div>
-                </div>
-                <div class="latest-work-item small-work">
-                    <div class="latest-work-item-overlay">
-                        <h3>Title</h3>
-                    </div>
-                    <div class="latest-work-item-background "><img src="img/design-flex-3.jpg" alt=""></div>
-                </div>
-            </div>
-            <div class="latest-work-item medium-work col-4">
-                <div class="latest-work-item-overlay">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt ipsam laudantium.</p>
-                </div>
-                <div class="latest-work-item-background "><img src="img/design-flex-2.jpg" alt=""></div>
-            </div>
-            <div class="latest-work-double-item  col-4">
-                <div class="latest-work-item small-work">
-                    <div class="latest-work-item-overlay">
-                        <h3>Title</h3>
-                    </div>
-                    <div class="latest-work-item-background "><img src="img/design-flex-1.jpg" alt=""></div>
-                </div>
-                <div class="latest-work-item small-work ">
-                    <div class="latest-work-item-overlay">
-                        <h3>Title</h3>
-                    </div>
-                    <div class="latest-work-item-background "><img src="img/design-flex-3.jpg" alt=""></div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -147,6 +163,19 @@
 
 <!------------------ latest works end ------------------------------------>
 
+
+
+<!------------------ Multimedia  ------------------------------------>
+<section class="multimedia index-section">
+    <div class="multimedia-container container">
+        <div class="multimedia-video">
+            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/1wtjyv1lmKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+
+<!------------------ Multimedia end -------------------------------------->
 
 
 <!------------------ About me -------------------------------------->
@@ -194,7 +223,7 @@
             </div>
             <div class="contact-info col-8">
                 <div class="contact-info-row row">
-                    <div class="contact-info-details col-6">
+                    <div class="contact-info-details col-md-6">
                         <ul>
                             <li><p>Address Prospect Shevchenka 10a</p></li>
                             <li><a href="tel: 0979999999">+380999999999</a></li>
@@ -202,7 +231,7 @@
                             <li><a href="tel: 0979999999">+380999999999</a></li>
                         </ul>
                     </div>
-                    <div class="contact-info-socials col-6">
+                    <div class="contact-info-socials col-md-6">
                         <ul>
                             <li><a href=""><img src="img/pinterest.svg" alt="pinterest"></a></li>
                             <li><a href=""><img src="img/facebook.svg" alt="facebook"></a></li>
@@ -267,7 +296,7 @@
         var uluru = {lat: 46.460043, lng: 30.750551};
         // The map, centered at Uluru
         var map = new google.maps.Map(
-            document.getElementById('contact-map-location'), {zoom: 15, center: uluru});
+                document.getElementById('contact-map-location'), {zoom: 15, center: uluru});
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
     }
