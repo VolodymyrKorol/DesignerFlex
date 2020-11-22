@@ -7,10 +7,10 @@ else
 
 switch ($config){
     case "Production":
-        define("MysqlHost","fdb30.awardspace.net");
-        define("MysqlDB","3627497_volodymyr01korol");
-        define("MysqlUser","3627497_volodymyr01korol");
-        define("MysqlPWD","1234djdf");
+        define("MysqlHost","sql112.unaux.com");
+        define("MysqlDB","unaux_26959405_designflex");
+        define("MysqlUser","unaux_26959405");
+        define("MysqlPWD","sta2pvxn9in7jpd");
         break;
     case "Vova":
         define("MysqlHost","localhost");

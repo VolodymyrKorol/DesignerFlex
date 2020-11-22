@@ -5,6 +5,7 @@ if (!empty($_POST['submit'])){
     $is_authorized = $auth->authorize($_POST);
     if ($is_authorized){
         header('Location: /');
+        exit();
     }
 }else{
     $is_authorized = true;

@@ -90,7 +90,7 @@ if (empty($_SESSION['user'])){
         ?>
 
         <div class="user-list-item" data-user-id="<?php echo $user->id?>">
-
+            <button class="btn delete-btn remove-user">Удалить</button>
             <div class="user-id">
                 <span>#<?php echo $user->id?></span>
             </div>
@@ -98,16 +98,20 @@ if (empty($_SESSION['user'])){
             <label>
                 <span>Fio</span>
                 <input type="text" class="form-control name-admin user-edit-field" name="name-admin" value="<?php echo $user->fio?>">
+                <p class="error-text error-name"></p>
             </label>
 
             <label>
                 <span>Phone</span>
                 <input type="text" class="form-control phone-admin user-edit-field" name="phone-admin" value="<?php echo $user->phone?>">
+                <p class="error-text error-phone"></p>
+
             </label>
 
             <label>
                 <span>Email</span>
                 <input type="text" class="form-control email-admin user-edit-field" name="email-admin" value="<?php echo $user->email?>">
+                <p class="error-text error-email"></p>
             </label>
 
             <label>
@@ -117,7 +121,8 @@ if (empty($_SESSION['user'])){
 
             <label>
                 <span>Password</span>
-            <input type="text" class="form-control password-admin user-edit-field" name="password-admin" value="<?php echo $user->password?>">
+                <input type="text" class="form-control password-admin user-edit-field" name="password-admin" value="<?php echo $user->password?>">
+                <p class="error-text error-password"></p>
             </label>
 
         </div>

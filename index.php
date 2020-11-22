@@ -9,6 +9,9 @@ switch ($_SERVER['REQUEST_URI']){
     case '/user/edit':
         include 'pages/user-edit.php';
         break;
+    case '/user/delete':
+        include 'pages/user-delete.php';
+        break;
     case '/registration':
         include 'pages/ragistration.php';
         break;
@@ -29,7 +32,6 @@ switch ($_SERVER['REQUEST_URI']){
 
     default:
         include 'pages/404.php';
-
 
 }
 die();

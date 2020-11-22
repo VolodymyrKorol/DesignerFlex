@@ -24,8 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="315538cb-f807-4b2a-8f94-eede73d2159b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libphp/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/libphp/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libphp/config/db-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/libphp/config/db-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/user-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/user-edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +92,7 @@
       <workItem from="1603994272448" duration="10589000" />
       <workItem from="1605445758411" duration="3277000" />
       <workItem from="1605449141016" duration="6077000" />
-      <workItem from="1606061141988" duration="12493000" />
+      <workItem from="1606061141988" duration="17437000" />
     </task>
     <task id="LOCAL-00001" summary="Changed background hero">
       <created>1602362019994</created>
@@ -110,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602362233725</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created authorization and admin">
+      <created>1606074042733</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606074042733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +145,8 @@
     <MESSAGE value="Changed background hero" />
     <MESSAGE value="Changed images hero" />
     <MESSAGE value="Changed images names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed images names" />
+    <MESSAGE value="created authorization and admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="created authorization and admin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="624" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602350156468">
@@ -148,10 +161,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="622" y="201" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606069968506" />
-    <state x="763" y="443" key="NewPhpFileDialog" timestamp="1606071643561">
+    <state x="763" y="443" key="NewPhpFileDialog" timestamp="1606077863357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="763" y="443" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606071643561" />
+    <state x="763" y="443" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606077863357" />
+    <state x="493" y="200" key="Vcs.Push.Dialog.v2" timestamp="1606074087671">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="493" y="200" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1606074087671" />
     <state x="502" y="54" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606072038300">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

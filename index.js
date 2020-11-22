@@ -16,8 +16,30 @@ $('.latest-work-item').on('mouseout', function(){
 })
 
 
+$('.remove-user').on('click',function () {
+    let user_id = $(this).closest('.user-list-item').attr('data-user-id')
+
+    $.ajax({
+        url:  '/user/delete',
+        method: "POST",
+        data: {
+            id: user_id
+        },
+        dataType: "json",
+        success: (json)=>{
+            console.log(json)
+            if (json.response){
+                $(this).closest('.user-list-item').remove()
+            }
+        },
+        error: ()=>{
+            console.log('error')
+        }
+    })
+})
 $('.user-edit-field').on('change',function () {
     let user_id = $(this).closest('.user-list-item').attr('data-user-id')
+    $('.user-list-item .error-text').text('')
     $.ajax({
         url:  '/user/edit',
         method: "POST",
@@ -32,6 +54,9 @@ $('.user-edit-field').on('change',function () {
         dataType: "json",
         success: (json)=>{
             console.log(json)
+            for (key in json) {
+                $('.user-list-item[data-user-id="' + user_id + '"] .error-' + key).text(json[key])
+            }
         },
         error: ()=>{
             console.log('error')
